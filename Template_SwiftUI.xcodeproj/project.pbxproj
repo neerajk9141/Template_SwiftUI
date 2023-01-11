@@ -17,6 +17,7 @@
 		1871CE78296D700C00ACCA63 /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CE77296D700C00ACCA63 /* GridItemView.swift */; };
 		1871CE7E296D739900ACCA63 /* SearchPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CE7D296D739900ACCA63 /* SearchPageView.swift */; };
 		1871CE80296D77FC00ACCA63 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CE7F296D77FC00ACCA63 /* SearchViewModel.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		1871CE77296D700C00ACCA63 /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		1871CE7D296D739900ACCA63 /* SearchPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageView.swift; sourceTree = "<group>"; };
 		1871CE7F296D77FC00ACCA63 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			path = GridView;
 			sourceTree = "<group>";
 		};
+
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,9 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1871CE4E296D6C1A00ACCA63 /* ContentView.swift in Sources */,
-				1871CE80296D77FC00ACCA63 /* SearchViewModel.swift in Sources */,
-				1871CE7E296D739900ACCA63 /* SearchPageView.swift in Sources */,
-				1871CE78296D700C00ACCA63 /* GridItemView.swift in Sources */,
 				1871CE4C296D6C1A00ACCA63 /* Template_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
