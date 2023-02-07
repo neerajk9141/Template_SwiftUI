@@ -9,16 +9,7 @@ on:
     branches:
       - dev
 jobs:
-
-    strategy:
-      fail-fast: false
-      matrix:
-        macos:
-          - 11
-          - 12
-        xcode:
-          - latest-stable
-    runs-on: macos-latest
+    runs-on:macos-latest
     steps:
       - name: Select Xcode version
         uses: nicklockwood/SwiftFormat/actions@v1
