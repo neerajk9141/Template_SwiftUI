@@ -18,7 +18,7 @@ jobs:
           - 12
         xcode:
           - latest-stable
-    runs-on: macos-${{ matrix.macos }}
+    runs-on: macos
     steps:
       - name: Select Xcode version
         uses: nicklockwood/SwiftFormat/actions@v1
