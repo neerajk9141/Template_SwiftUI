@@ -1,0 +1,26 @@
+---
+name: swiftformat
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+jobs:
+  runs-on: macos-latest
+  steps:
+    - name: Select Xcode version
+      uses: nicklockwood/SwiftFormat/actions@v1
+      with:
+        xcode-version: ${{ matrix.xcode }}
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Build and Test
+      run: xcodebuild -project Template_SwiftUI.xcodeproj -scheme "SwiftFormat
+        (Framework)" -sdk macosx clean build test
+    - name: Codecov
+      uses: codecov/codecov-action@v2
+      with:
+        token: null
+        env_vars: MD_APPLE_SDK_ROOT,RUNNER_OS,RUNNER_ARCH
